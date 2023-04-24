@@ -1,0 +1,135 @@
+/* En este archivo escriban su CSS */
+
+/* Fonts */
+/* Importar aquí la font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+    /*  background:#fbfbfb ;   esta instruccion general de la consigna evita aplicar los otros fondos...*/
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration:none;
+    color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+
+
+*/
+#mascotas {
+    margin-top: 150px;
+    margin-right: 30;
+    border-radius: 50% ;
+}  
+
+
+header {
+   background-color: #fbfbfb ;
+   display:inline-block;
+   align-items:center;
+   justify-content:end;
+   padding: 30px;
+   height: 120px;
+   width: 200px;
+   position:fixed;
+   top: 0px;;
+   left:130px;
+   box-shadow: 0,4px 10px -5px olive;
+} 
+
+/* no aplica color al fondo del footer */
+#pie-de-pagina {
+ background: #af599e;
+ color: #fbfbfb;
+ padding: 15px;
+}  
+
+#articulo-contacto {
+    background:rgba(175, 89, 158, 0.3);
+    border-radius: 10%;
+    padding: 15px;
+    color: #0f0f0f;
+    min-height: 70vh
+   }  
+
+#descarga {
+    background:#af599e;
+    border-radius: 10%;
+    padding: 15px;
+    color: #fbfbfb;
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+   }  
+.menu li {
+    display:inline-block;
+} 
+
+.eidos {
+   margin-left: 2px;
+} 
+
+#titulo1 {
+    font-size: 36px;
+    margin-left: 40px;
+ } 
+
+ #titulo2 {
+    font-size: 28px;
+    margin-left: 120px;
+ } 
+
+p {
+    margin-left: 10px;
+    min-height: 30vh
+ } 
+
+section {
+    min-height: 100vh;
+ } 
+ 
+
