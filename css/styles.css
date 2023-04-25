@@ -35,7 +35,7 @@ main {
 header {
     height: 90px;
     width: 100%;
-    background-color: bisque;
+    background-color: rgb(196, 255, 223);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -114,6 +114,10 @@ h1 {
     display: flex;
     width: 100%;
     justify-content: space-between;
+}
+
+footer {
+    background-color: bisque;
 }
 
 /* Recomendaciones! 
