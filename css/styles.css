@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 /* En este archivo escriban su CSS */
 
 /* Fonts */
 /* Importar aquí la font */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 
 
@@ -15,11 +15,53 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 18px;
     /* Para que el scrolleo en la one page sea suave */
     scroll-behavior: smooth;
+}
+
+body {
     font-family: 'Lato', sans-serif;
-    /*  background:#fbfbfb ;   esta instruccion general de la consigna evita aplicar los otros fondos...*/
+    background-color: #fbfbfb;
+    font-size: 18px;
+    padding-top: 70px;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    height: 90px;
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    /* colocar sombra botshadown */
+}
+
+#inicio {
+    display: flex;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    scroll-margin-top: 500px;
+}
+
+#contacto {
+    display: flex;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    scroll-margin-top: 500px;
 }
 
 /* Para quitar los puntos a los items de listas */
@@ -29,17 +71,50 @@ ul {
 
 /* Para que los enlaces hereden el color de texto y no tengan subrayado */
 a {
-    text-decoration:none;
+    text-decoration: none;
     color: inherit;
 }
 
 /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
 *  el margin: auto; para tenerlo centrado fácilmente ;)
 */
-main {
-    max-width: 1200px;
-    margin: auto;
+
+ul li {
+    display: inline;
+    margin-left: 30px;
 }
+
+.mascotas {
+    border-radius: 50%;
+    max-width: 100%;
+
+}
+
+p {
+    line-height: 1.2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+#descarga {
+    background-color: #af599e;
+    border-radius: 20px;
+    padding: 15px;
+    color: #fbfbfb;
+}
+
+.iconos {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
 
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
@@ -57,79 +132,4 @@ main {
 *  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
 *    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
 *    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
-
-
 */
-#mascotas {
-    margin-top: 150px;
-    margin-right: 30;
-    border-radius: 50% ;
-}  
-
-
-header {
-   background-color: #fbfbfb ;
-   display:inline-block;
-   align-items:center;
-   justify-content:end;
-   padding: 30px;
-   height: 120px;
-   width: 200px;
-   position:fixed;
-   top: 0px;;
-   left:130px;
-   box-shadow: 0,4px 10px -5px olive;
-} 
-
-/* no aplica color al fondo del footer */
-#pie-de-pagina {
- background: #af599e;
- color: #fbfbfb;
- padding: 15px;
-}  
-
-#articulo-contacto {
-    background:rgba(175, 89, 158, 0.3);
-    border-radius: 10%;
-    padding: 15px;
-    color: #0f0f0f;
-    min-height: 70vh
-   }  
-
-#descarga {
-    background:#af599e;
-    border-radius: 10%;
-    padding: 15px;
-    color: #fbfbfb;
-    height: 20px;
-    width: 20px;
-    font-size: 20px;
-   }  
-.menu li {
-    display:inline-block;
-} 
-
-.eidos {
-   margin-left: 2px;
-} 
-
-#titulo1 {
-    font-size: 36px;
-    margin-left: 40px;
- } 
-
- #titulo2 {
-    font-size: 28px;
-    margin-left: 120px;
- } 
-
-p {
-    margin-left: 10px;
-    min-height: 30vh
- } 
-
-section {
-    min-height: 100vh;
- } 
- 
-
