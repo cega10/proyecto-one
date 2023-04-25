@@ -3,6 +3,7 @@
 
 /* Fonts */
 /* Importar aquí la font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 
 
@@ -115,7 +116,6 @@ h1 {
     justify-content: space-between;
 }
 
-
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
 *    "estilos generales". Una buena idea sería comenzar por el <body> ;)
@@ -132,4 +132,6 @@ h1 {
 *  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
 *    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
 *    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+
+
 */
