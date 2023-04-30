@@ -38,7 +38,7 @@ header {
     width: 100%;
     background-color: #fbfbfb;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
     position: fixed;
@@ -86,7 +86,7 @@ header {
 .iconos {
     display: flex;
     width: 85%;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     margin-right: 25px;
@@ -97,16 +97,9 @@ header {
 
 /* Para quitar los puntos a los items de listas */
 ul {
-    list-style:;
-    color:brown;
+    list-style: none;
 }
 
-ul.list-capacitacion lo {
-    list-style:outside;
-    color:#0f0f0f;
-    text-align:center;
-    list-style-position: inside;
-}
 
 /* Para que los enlaces hereden el color de texto y no tengan subrayado */
 a {
@@ -181,27 +174,25 @@ h2 {
 
 
 #anclabonus {
-    display:none;
+    display: none;
     scroll-margin-top: 110px;
-    flex-direction:column;
-    justify-content:center;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding-top: 00px;
     padding-bottom: 3px;
 }
 
-#anclabonus:target  {
-    display:flex;
+#anclabonus:target {
+    display: flex;
 }
 
 
 .grupo-de-formulario {
     display: flex;
     justify-content: center;
-    align-items:;
     flex-direction: column;
     margin-bottom: 50px;
-    border-style: ;
 
 }
 
