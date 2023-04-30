@@ -18,7 +18,7 @@
         <nav class="menu">
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#titulo2">Contacto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -26,22 +26,34 @@
     <main>
         <section id="inicio">
             <img src="./img/foto cv.jpg" width="400" alt="Animal" class="mascotas">
-            <h1 id="titulo1">Hola! Soy Julio César </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus praesentium tempore ea, pariatur vel
-                temporibus aliquid minus nobis neque consectetur facilis vitae excepturi beatae odit ut sint! Fugiat,
-                necessitatibus repellat?</p>
+            <h1 id="titulo1">Hola! Soy Julio César</h1>
+            <p> Especialista IT, asesor en la planificación, coordinación e implementación de estrategias en Tecnología
+                Emergentes, Disruptivas y Exponenciales, que combina sus conocimientos y experiencia técnica, con
+                habilidades en gestión del Talento Humano; ambos sectores de vital importancia para el desarrollo y
+                ejecución efectiva de los últimos avances
+                tecnológicos para el logro de los propósitos y metas organizacionales, en ambientes de trabajo dinámicos
+                y bajo presión.
+                Además, promueve la comunicación efectiva entre los clientes interno y externos,
+                poniendo al servicio de estos todas sus competencias; finalmente se esfuerza para alcanzar los mejores
+                estándares de calidad
+                a través del estudio constante en el indetenible mundo IT.</p>
             <a href="./img/cv 2022 vers 3.pdf" id="descarga" download="Resumen Curricular JCHG"> Descargar mi CV</a>
         </section>
-        <section class="contacto">
+        <section id="contacto">
 
             <article class="articulo-contacto">
-                <h2 id="titulo2">Hablemos!</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et blanditiis quisquam culpa earum
-                    remtemporibus est quos corrupti voluptatibus deleniti eaque ipsam, a quis officiis mollitia,
-                    nesciunt,voluptates modi adipisci!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
-                    totam quibusdam mollitia, nam,laborum corrupti sapiente optio excepturi eveniet recusandae
-                    perspiciatis nemo dolor
+                <h2>Hablemos!</h2>
+                <p> "Quizá por primera vez en la historia humana, se es
+                    consciente de que se está entrando a una nueva era:
+                    la era digital. Esta era digital es heredera directa de la
+                    segunda revolución industrial, del descubrimiento y
+                    aplicación de la electricidad y de la tremenda evolución
+                    sufrida por el campo de la electrónica y la computación..."
                 </p>
+                <p> "Es un hecho que la llegada del “internet de las cosas” o
+                    “Internet of Things” fue uno de los factores clave de la Cuarta
+                    Revolución Industrial."</p>
+
             </article>
             <ul class="iconos">
                 <li><a href="#anclabonus"> <img src="./img/mail.png" width="50" alt="email"></a></li>
@@ -50,30 +62,32 @@
                 <li><a href="https://www.linkedin.com/in/julio-c%C3%A9sar-henr%C3%ADquez-garc%C3%ADa/"> <img
                             src="./img/linkedin.png" width="50" alt="linkedln"></a></li>
             </ul>
+
+            <div id="anclabonus">
+                <h2>Dejame tu mensaje!</h2>
+                <form id="formulario" action="">
+                    <div class="grupo-de-formulario">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" name='nombre' id="nombre" placeholder="nombre...">
+                    </div>
+                    <div class="grupo-de-formulario">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name='email' id="email" placeholder="email...">
+                    </div>
+                    <div class="grupo-de-formulario">
+                        <label for="exampleTextarea">Mensaje</label>
+                        <textarea class="form-control" name='mensaje' id="mensaje" rows="3"></textarea>
+                    </div>
+                    <div class="grupo-de-formulario">
+                        <input type="checkbox" required> Acepto la política de privacidad.
+                    </div>
+                    <button class="boton envio" type="submit">Enviar</button>
+                </form>
+            </div>
         </section>
 
         <!-- Una vez tenemos el formulario HTML listo, se recogen los datos con otro programa (php) para enviar el mail. En ese caso es necesario añadir los parámetros method (GET O POST, este ultimo mas seguro), y action (ruta del script que enviara el mail.-->
-        <div class="bonus">
-            <h2 id="anclabonus">Dejame tu mensaje!</h2>
-            <form id="formulario" action="">
-                <div class="grupo-de-formulario">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" class="form-control" name='nombre' id="nombre" placeholder="nombre...">
-                </div>
-                <div class="grupo-de-formulario">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" name='email' id="email" placeholder="email...">
-                </div>
-                <div class="grupo-de-formulario">
-                    <label for="exampleTextarea">Mensaje</label>
-                    <textarea class="form-control" name='mensaje' id="mensaje" rows="3"></textarea>
-                </div>
-                <div class="grupo-de-formulario">
-                    <input type="checkbox" required> Acepto la política de privacidad.
-                </div>
-                <button class="boton envio" type="submit">Enviar</button>
-            </form>
-        </div>
+
         <footer id="pie-de-pagina">
             <h4 class="text-footer">Código Latam</h4>
             <h4>Capacitacion Latinoamericana.</h4>
