@@ -50,6 +50,8 @@ header {
 
 #titulo1 {
     font-size: 36px;
+    color: rgb(26, 223, 26);
+    text-decoration: solid;
 }
 
 #inicio {
