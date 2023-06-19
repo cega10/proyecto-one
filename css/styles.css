@@ -36,88 +36,69 @@ main {
 header {
     height: 90px;
     width: 100%;
-    background-color: #fbfbfb;
+    background-color:#fbfbfb;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     position: fixed;
     top: 0;
-    border-bottom: 2px solid #aa0c7b;
-    box-shadow: 5px 5px 5px #ddd;
+    border-bottom: 2px solid #ddd;
+    box-shadow: 0px 2px 5px #ddd ;
     font-size: 28px;
 }
-
+h2 {
+    font-size: 28px;
+}
 #titulo1 {
     font-size: 36px;
-    color: rgb(26, 223, 26);
-    text-decoration: solid;
 }
 
 #inicio {
     display: flex;
-    justify-content:space-between;
-    align-items:start;
-    flex-direction:row;
-    min-height: 50vh;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
     scroll-margin-top: 100px;
-    width: 100%;
-    margin-top: 50px;
 }
 
-.active {
-    background:  rgba(175, 89, 158, 0.3);;
-    transition: background-color 15ms;
-}
-
-/*li.menu-item:hover,
-li.menu-item a.active,*/
-li.menu-item:hover{
-    background:  #aa0c7b;
-    color:rgba(235, 238, 235, 0.945);
-    transition: background-color 5s;
-}
-
-#hablemos {
+.contacto {
     display: flex;
     padding: 5px 10px;
-    justify-content: start;
+    justify-content:start;
     align-items: center;
     flex-direction: column;
     scroll-margin-top: 100px;
-    min-height: 50vh;
-
+    min-height: 100vh;
+  
 }
 
-.formacion {
-    background-color: rgba(175, 89, 158, 0.3);
+.articulo-contacto {
+    background-color: rgba(175, 89, 158, 0.3) ;
+    border-radius: 5%;
     margin: 15px;
     text-align: center;
     color: #0f0f0f;
 }
-
-
 .iconos {
     display: flex;
     width: 85%;
-    justify-content: center;
-    align-items: center;
+    justify-content:space-around;
+    align-items: start;
     flex-direction: row;
-    margin-right: 25px;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-right:  25px;
 
 }
-
 /* Para quitar los puntos a los items de listas */
 ul {
     list-style: none;
 }
 
-
 /* Para que los enlaces hereden el color de texto y no tengan subrayado */
 a {
-    /*text-decoration: none;*/
+    text-decoration: none;
     color: inherit;
 }
 
@@ -127,16 +108,12 @@ a {
 
 ul li {
     display: inline;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 30px;
 }
 
 .mascotas {
     border-radius: 50%;
-    border: 4px solid #aa0c7b;
-    box-shadow: 12px 1px #af599e;
-    margin-left: 150px;
-    margin-right: 150px;
+    max-width: 100%;
 
 }
 
@@ -144,19 +121,12 @@ p {
     line-height: 1.2;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 8px;
-    margin-right: 8px;
-    text-align: justify;
+    text-align: center;
 }
 
 h1 {
     font-size: 36px;
     margin-top: 20px;
-}
-
-h2 {
-    font-size: 28px;
-    text-align: center;
 }
 
 #descarga {
@@ -166,81 +136,56 @@ h2 {
     color: #fbfbfb;
     min-height: 5px;
     font-size: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 
 #formulario {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    align-items:center;
     flex-direction: column;
-    width: 100%;
-    justify-content: space-around;
+    width: 90%;
+    justify-content:space-around;
     font-family: 'Lato', sans-serif;
-    background-color: rgb(199, 242, 243);
+    background-color:rgb(199, 242, 243);
     font-size: 18px;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 100px;
     border-style: solid;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     margin-top: 30px;
+    margin-left: 1px;
+
 }
 
+.bonus {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+   padding-top: 20px;
+   padding-bottom: 3px;
+}
 
 #anclabonus {
-    display: none;
-    scroll-margin-top: 110px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 00px;
-    padding-bottom: 3px;
-}
-
-#anclabonus:target {
-    display: flex;
+    scroll-margin-top:110px 
 }
 
 
 .grupo-de-formulario {
     display: flex;
-    justify-content: center;
+    justify-content:center;
+    align-items:start;
     flex-direction: column;
     margin-bottom: 50px;
+    border-style: ;
 
 }
-
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-td {
-    padding: 8px;
-    text-align: center;
-    background-color: #f2f2f2;
-    border: 1px solid #ddd;
-}
-
-.subtitulo {
-    font-size: 36px;
-    text-align: center;
-    width: 100%;
-    
-}
-
-.cap {
-    background-color:rgba(175, 89, 158, 0.3);
-}
-
-
 
 footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    align-items:center;
     flex-direction: column;
     margin-top: 17px;
     padding-top: 10px;
@@ -251,3 +196,24 @@ footer {
     color: #fbfbfb;
     height: 90px;
 }
+
+
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+
+
+*/
